@@ -1,12 +1,13 @@
 class EventsController < ApplicationController
   def index
     @events = Event.all
-    @past_events = Event.all
-    @upcoming_events = Event.all
+    @past_events = Event.past
+    @upcoming_events = Event.upcoming
   end
 
   def show
     @event = Event.find(params[:id])
+    @event_attendees = AttendedEvent.where('event_id =?', params[:event_id])
   end
 
   def new
@@ -25,7 +26,15 @@ class EventsController < ApplicationController
     end
   end
 
+  def edit
+    @event = current_user.events.build
+  end
+
   private
+  
+  def set_event
+    @event = Event.find(params[:id])
+  end
 
   def event_params
     params.require(:event).permit(:title, :date, :location, :user_id)
