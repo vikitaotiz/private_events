@@ -19,8 +19,8 @@ The project mainly focuses on the concept of associations or relationships betwe
 - Click on the `Code` green button
 - By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
 - In your local PC, open your terminal in the folder you would like to clone the repository into
-- Clone the repository with the command: `git clone (copied link)`; like so: `git clone https://github.com/vikitaotiz/micro-reddit.git`
-- After the clone, type in the command `cd micro-reddit` to access the app directory on the terminal
+- Clone the repository with the command: `git clone (copied link)`; like so: `git clone https://github.com/vikitaotiz/private_events.git`
+- After the clone, type in the command `cd private_events` to access the app directory on the terminal
 - Then run 'bundle install' to install all the required dependencies
 - Then run 'npm install' to avoid this error 'Webpacker::Manifest::MissingEntryError in posts#index'
 - Run 'rails db:create db:migrate'
