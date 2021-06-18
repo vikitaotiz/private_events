@@ -3,6 +3,13 @@
     <a class="navbar-brand fw-bolder" href="/" style="margin-right: 15%;">
         Private Events
     </a>
+
+    <% if user_signed_in? %>
+      <a class="navbar-link" href="/events/new" style="margin-right: 15%;">
+        Create New Event
+    </a>
+    <% end %>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
