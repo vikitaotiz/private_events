@@ -11,7 +11,7 @@ The project mainly focuses on the concept of associations or relationships betwe
 
 ## Live Demo
 
-[Live Demo Link](https://vikita-reddit.herokuapp.com/)
+[Live Demo Link](https://vikita-private-events.herokuapp.com/)
 
 ## Getting Started
 
