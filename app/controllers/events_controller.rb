@@ -3,9 +3,10 @@ class EventsController < ApplicationController
     @events = Event.all
     @past_events = Event.all
     @upcoming_events = Event.all
+  end
 
-    # @previous_events = Event.previous
-    # @upcoming_events = Event.upcoming
+  def show
+    @event = Event.find(params[:id])
   end
 
   def new

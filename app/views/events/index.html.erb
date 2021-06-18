@@ -4,7 +4,7 @@
 <ul>
   <% @upcoming_events.each do |event| %>
     <li>
-      <%= link_to event.name, event_path(event.id)%>
+      <%= link_to event.title, event_path(event.id)%> : <%= event.user.email %> 
     </li>
     <br>
   <% end %>
@@ -14,7 +14,7 @@
 <ul>
   <% @past_events.each do |event| %>
     <li>
-      <%= link_to event.name, event_path(event.id)%>
+      <%= link_to event.title, event_path(event.id)%>
     </li>
     <br>
   <% end %>
