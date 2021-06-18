@@ -3,7 +3,7 @@
 This is a simple Event Hosting Application project written on ruby on rails. The project test basic concepts of MVC application architecture. It involves, installation and configuration of ruby on rails, use of models, controllers, views, routers and database.
 The project mainly focuses on the concept of associations or relationships between models
 
-![viki-reddit](https://user-images.githubusercontent.com/42869046/120814860-f0efb500-c557-11eb-93ce-b1d63919aaff.JPG)
+![pe](https://user-images.githubusercontent.com/42869046/122574551-6b402f00-d058-11eb-833e-2098d0a7093c.JPG)
 
 ## Built With
 
