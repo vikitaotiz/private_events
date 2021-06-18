@@ -1,0 +1,56 @@
+<h1>Created events</h1>
+<% @created_events.each do |event| %>
+<p>
+  <strong>Name:</strong>
+  <%= event.title %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= event.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= event.location %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@created_events) %> |
+<%= link_to 'Back', events_path %>
+<% end %>
+
+<h1> Upcoming events </h1>
+<% @upcoming_events.each do |attend| %>
+    <p>
+      <strong>Name:</strong>
+      <%= attend.title %>
+    </p>
+
+    <p>
+      <strong>Date:</strong>
+      <%= attend.date %>
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      <%= attend.location %>
+    </p>
+<% end %>
+
+<h1> Previous events </h1>
+<% @previous_events.each do |attend| %>
+    <p>
+      <strong>Name:</strong>
+      <%= attend.title %>
+    </p>
+
+    <p>
+      <strong>Date:</strong>
+      <%= attend.date %>
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      <%= attend.location %>
+    </p>
+<% end %>

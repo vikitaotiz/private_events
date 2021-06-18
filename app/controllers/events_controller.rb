@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+  before_action :authenticate_user!, only: %i[create edit update destroy]
+
   def index
     @events = Event.all
     @past_events = Event.past
