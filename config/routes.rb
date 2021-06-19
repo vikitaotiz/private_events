@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resources :events
   resources :attended_events
+  get '/users', to: 'users#show'
 end

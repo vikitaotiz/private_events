@@ -1,3 +1,7 @@
+<div class="d-flex border-top border-bottom p-1 mb-3">
+    <div class="me-auto p-2"><%= link_to ' Back', events_path, class: "fas fa-arrow-left text-decoration-none main_cl" %></div>
+</div>
+
 <p>
   <strong>Name:</strong>
   <%= @event.title %>
@@ -14,7 +18,9 @@
 </p>
 <hr>
 
-<%= button_to 'Attend This Event', {:controller => "attended_events", :action => "create", :event_id => @event.id, :user_id=> current_user} , :method=>:post  %>
+<% if user_signed_in? %>
+  <%= button_to 'Attend This Event', {:controller => "attended_events", :action => "create", :event_id => @event.id, :user_id=> current_user} , :method=>:post  %>
+<% end %>
 
 <hr>
 <h4>Attendees</h4>
@@ -23,4 +29,3 @@
     <li><%= user.email %></li>
   <% end %>
 </ul>
-<%= link_to 'Back', events_path %>
