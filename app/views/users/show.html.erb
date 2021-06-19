@@ -18,12 +18,9 @@
   <strong>Location:</strong>
   <%= event.location %>
 </p>
-
-<%= link_to 'Edit', edit_event_path(@created_events) %> |
-<%= link_to 'Back', events_path %>
 <% end %>
 
-<h1> Upcoming events </h1>
+<h1> Upcoming events to be attended</h1>
 <% @upcoming_events.each do |attend| %>
     <p>
       <strong>Name:</strong>
@@ -41,7 +38,7 @@
     </p>
 <% end %>
 
-<h1> Previous events </h1>
+<h1> Previous events attended</h1>
 <% @past_events.each do |attend| %>
     <p>
       <strong>Name:</strong>
