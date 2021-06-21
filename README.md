@@ -27,6 +27,11 @@ The project mainly focuses on the concept of associations or relationships betwe
 - Run 'rails server' to spin up a development server
 - Once the server is up, open this link 'http://127.0.0.1:3000' on your browser
 
+# Testing the application
+
+- Navigate into the app directory, `cd private_events`
+- Then run `rspec --format doc`. This will display detailed information about models and test results.
+
 ## Authors
 
 :bust_in_silhouette: **Victor Otieno**

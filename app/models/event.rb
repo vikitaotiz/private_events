@@ -6,7 +6,7 @@ class Event < ApplicationRecord
   scope :upcoming, -> { where('date >= ?', Date.today) }
   scope :past, -> { where('date < ?', Date.today) }
 
-  validates :user, presence: true
+  validates :title, presence: true
   validates :date, presence: true
   validates :location, presence: true
 end
