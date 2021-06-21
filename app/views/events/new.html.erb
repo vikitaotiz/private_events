@@ -1,0 +1,7 @@
+<div class="d-flex border-top border-bottom p-1 mb-3">
+    <div class="me-auto p-2"><%= link_to ' Back', events_path, class: "fas fa-arrow-left text-decoration-none main_cl" %></div>
+</div>
+
+<h1>New Event</h1>
+
+<%= render 'form', event: @event %>

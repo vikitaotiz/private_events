@@ -1,0 +1,57 @@
+<div class="d-flex border-top border-bottom p-1 mb-3">
+    <div class="me-auto p-2"><%= link_to ' Back', events_path, class: "fas fa-arrow-left text-decoration-none main_cl" %></div>
+</div>
+
+<h1>My Events</h1>
+<% @created_events.each do |event| %>
+<p>
+  <strong>Name:</strong>
+  <%= event.title %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= event.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= event.location %>
+</p>
+<% end %>
+
+<h1> Upcoming events to be attended</h1>
+<% @upcoming_events.each do |attend| %>
+    <p>
+      <strong>Name:</strong>
+      <%= attend.title %>
+    </p>
+
+    <p>
+      <strong>Date:</strong>
+      <%= attend.date %>
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      <%= attend.location %>
+    </p>
+<% end %>
+
+<h1> Previous events attended</h1>
+<% @past_events.each do |attend| %>
+    <p>
+      <strong>Name:</strong>
+      <%= attend.title %>
+    </p>
+
+    <p>
+      <strong>Date:</strong>
+      <%= attend.date %>
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      <%= attend.location %>
+    </p>
+<% end %>

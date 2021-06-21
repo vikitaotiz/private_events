@@ -1,0 +1,31 @@
+<div class="d-flex border-top border-bottom p-1 mb-3">
+    <div class="me-auto p-2"><%= link_to ' Back', events_path, class: "fas fa-arrow-left text-decoration-none main_cl" %></div>
+</div>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+<hr>
+
+<% if user_signed_in? %>
+  <%= button_to 'Attend This Event', {:controller => "attended_events", :action => "create", :event_id => @event.id, :user_id=> current_user} , :method=>:post  %>
+<% end %>
+
+<hr>
+<h4>Attendees</h4>
+<ul>
+  <% @event.attendees.each do |user| %>
+    <li><%= user.email %></li>
+  <% end %>
+</ul>
