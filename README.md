@@ -30,6 +30,7 @@ The project mainly focuses on the concept of associations or relationships betwe
 # Testing the application
 
 - Navigate into the app directory, `cd private_events`
+- Then run `rails db:migrate db:test:prepare`
 - Then run `rspec --format doc`. This will display detailed information about models and test results.
 
 ## Authors
